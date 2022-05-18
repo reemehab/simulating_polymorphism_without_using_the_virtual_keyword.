@@ -13,7 +13,7 @@ struct ShapeVtable {
 };
 
 double GetArea(Shape *shape) {
-    shape->vtable->GetArea(shape);
+   return shape->vtable->GetArea(shape);
 }
 
 void PrintInfo(Shape *shape) {
